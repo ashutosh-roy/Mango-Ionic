@@ -9,7 +9,7 @@ const routes: Routes = [
     children:
     [
         {
-            path:'',
+            path:'welcome',
             loadChildren: () => import('../page/welcome/welcome.module')
             .then(m => m.WelcomePageModule)
         },
