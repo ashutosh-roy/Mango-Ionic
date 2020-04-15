@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { SlidesComponent } from './slides/slides.component';
 import { StartComponent } from './start/start.component';
 import { FormsModule } from '@angular/forms';
-import { IonicModule } from '@ionic/angular';
+import { IonicModule, IonButton } from '@ionic/angular';
 import { LogoComponent } from './logo/logo.component';
 
 @NgModule({
