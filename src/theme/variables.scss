@@ -54,7 +54,6 @@
     --ion-color-myapp-shade: #cf3c4f;
     --ion-color-myapp-tint: #ed576b;
     /*----------------------! Custom CSS FOR THE APP !----------------------*/
-    // 2020-04-15-12-05-31.png 
     .ion-color-myapp {
         --ion-color-base: var(--ion-color-myapp);
         --ion-color-base-rgb: var(--ion-color-myapp-rgb);
@@ -69,6 +68,15 @@
             color: var(--ion-color-myapp) !important;
             --ion-color-base: var(--ion-color-myapp) !important;
         }
+    }
+    .center {
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .overallalign {
+        margin-left: 10px;
+        margin-right: 10px;
     }
     /** dark **/
     --ion-color-dark: #222428;

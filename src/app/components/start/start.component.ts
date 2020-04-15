@@ -13,6 +13,6 @@ export class StartComponent implements OnInit {
   }
   navigateToLoginPage()
   {
-    this.router.navigate(['login']);
+    this.router.navigate(['/login']);
   }
 }
