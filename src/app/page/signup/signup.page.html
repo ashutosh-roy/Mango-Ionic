@@ -11,20 +11,20 @@
         <form>
             <ion-list>
                 <ion-item>
-                    <ion-label position="floating" clearInput value="clear me" color="myapp">Email ID</ion-label>
-                    <ion-input type='text'></ion-input>
+                    <ion-label position="floating">Email ID</ion-label>
+                    <ion-input name="email" clearInput value="clear me" type='text' required [(ngModel)]="postData.email"></ion-input>
                 </ion-item><br>
                 <ion-item>
-                    <ion-label position="floating" clearInput value="clear me" color="myapp">Username</ion-label>
-                    <ion-input type='text'></ion-input>
+                    <ion-label position="floating">Username</ion-label>
+                    <ion-input name="user" type='text' required [(ngModel)]="postData.username"></ion-input>
                 </ion-item><br>
                 <ion-item>
-                    <ion-label position="floating" clearInput value="clear me" color="myapp">Password</ion-label>
-                    <ion-input type='password'></ion-input>
+                    <ion-label position="floating" clearInput value="clear me ">Password</ion-label>
+                    <ion-input name="pass" type='password' required [(ngModel)]="postData.password "></ion-input>
                 </ion-item><br>
-                <ion-button expand="block" shape="round" color="myapp">Sign Up</ion-button>
-                <ion-item lines="none">
-                    <a routerLink="/login">Have an account?</a>
+                <ion-button expand="block " shape="round " color="myapp " (click)="signAction() ">Sign Up</ion-button>
+                <ion-item lines="none ">
+                    <a routerLink="/login ">Have an account?</a>
                 </ion-item>
             </ion-list>
         </form>
