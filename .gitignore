@@ -12,7 +12,8 @@
 Thumbs.db
 UserInterfaceState.xcuserstate
 $RECYCLE.BIN/
-
+/android/
+/server/
 *.log
 log.txt
 npm-debug.log*
