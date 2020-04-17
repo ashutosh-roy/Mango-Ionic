@@ -48,6 +48,7 @@ export class SignupPage implements OnInit
   {
     if (this.validateInputs()) 
     {
+      console.log(this.postData)
       this.authService.signup(this.postData).subscribe
       (
         (res: any) => 

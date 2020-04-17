@@ -1,11 +1,17 @@
+import { HomeGuard } from './../guards/home.guard';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomePage } from './home.page';
+import { UserDataResolver } from '../resolvers/userData.resolver';
 
 const routes: Routes = [
   {
     path: 'home',
     component: HomePage,
+    canActivate:[HomeGuard],
+    resolve:{
+      userData: UserDataResolver
+      },
     children:
     [
         {
@@ -27,6 +33,11 @@ const routes: Routes = [
             path:'notifications',
             loadChildren: () => import('../page/notifications/notifications.module')
             .then(m => m.NotificationsPageModule)
+        },
+        {
+          path:'',
+          redirectTo:'/home/feed',
+          pathMatch:'full'
         }
     ]
   }

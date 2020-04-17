@@ -18,3 +18,4 @@ import { SettingsPage } from './settings.page';
   declarations: [SettingsPage]
 })
 export class SettingsPageModule {}
+

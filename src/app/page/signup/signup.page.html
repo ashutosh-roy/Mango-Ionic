@@ -16,15 +16,15 @@
                 </ion-item><br>
                 <ion-item>
                     <ion-label position="floating">Username</ion-label>
-                    <ion-input name="user" type='text' required [(ngModel)]="postData.username"></ion-input>
+                    <ion-input name="user" clearInput value="clear me" type='text' required [(ngModel)]="postData.username"></ion-input>
                 </ion-item><br>
                 <ion-item>
                     <ion-label position="floating" clearInput value="clear me ">Password</ion-label>
-                    <ion-input name="pass" type='password' required [(ngModel)]="postData.password "></ion-input>
+                    <ion-input name="pass" clearInput value="clear me" type='password' required [(ngModel)]="postData.password "></ion-input>
                 </ion-item><br>
-                <ion-button expand="block " shape="round " color="myapp " (click)="signAction() ">Sign Up</ion-button>
+                <ion-button expand="block " shape="round " color="myapp" (click)="signAction() ">Sign Up</ion-button>
                 <ion-item lines="none ">
-                    <a routerLink="/login ">Have an account?</a>
+                    <a routerLink="/login">Have an account?</a>
                 </ion-item>
             </ion-list>
         </form>

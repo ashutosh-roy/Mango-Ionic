@@ -1,3 +1,4 @@
+import { AuthService } from './../../services/auth.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,10 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./feed.page.scss'],
 })
 export class FeedPage implements OnInit {
-
-  constructor() { }
-
+  authUser: any;
+  constructor(private auth:AuthService) { }
   ngOnInit() {
+    this.auth.userData$.subscribe((res:any) => 
+    {
+      this.authUser = res;
+      console.log(this.authUser);
+    });
   }
 
 }
